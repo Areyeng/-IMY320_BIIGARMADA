@@ -2,7 +2,7 @@
 <div class="container">
 	<div class="merch">
 		<div class="merch-img"></div>
-		<div class="merch-description">
+		<div class="merch-info">
 			<h3 class="merch-title"></h3>
 			<span class="merch-price"></span>
 		</div>

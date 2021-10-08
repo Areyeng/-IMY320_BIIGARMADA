@@ -46,7 +46,7 @@
 					<label for="serve-form-description">Description</label>
 					<input type="text" name="" id="serve-form-description"/>
 				</div>
-				<input type="submit" value="SUBMIT"/>
+				<button type="button">SUBMIT</button>
 			</form>
 		</div>
 	</div>
