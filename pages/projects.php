@@ -18,3 +18,16 @@
 
 </div>
 <?php require_once('footer.php'); ?>
+
+<?php 
+
+	// path to your JSON file
+	$file = '../data/projects.json'; 
+	// put the content of the file in a variable
+	$data = file_get_contents($file); 
+	// JSON decode
+	$obj = json_decode($data); 
+	// display the name of the first person
+	echo $obj[0]->name;
+
+?>

@@ -1,28 +1,28 @@
 <?php require_once('header.php'); ?>
 <div class="container">
 	<div class="serve-categories">
-		<div id="serv-games">
+		<div id="serve-games">
 			<div class="serve-icon"></div>
 			<div class="serve-title">
 				<h2></h2>
 				<div class="serve-description"></div>
 			</div>
 		</div>
-		<div id="serv-film">
+		<div id="serve-film">
 			<div class="serve-icon"></div>
 			<div class="serve-title">
 				<h2></h2>
 				<div class="serve-description"></div>
 			</div>
 		</div>
-		<div id="serv-infographics">
+		<div id="serve-infographics">
 			<div class="serve-icon"></div>
 			<div class="serve-title">
 				<h2></h2>
 				<div class="serve-description"></div>
 			</div>
 		</div>
-		<div id="serv-websites">
+		<div id="serve-websites">
 			<div class="serve-icon"></div>
 			<div class="serve-title">
 				<h2></h2>
