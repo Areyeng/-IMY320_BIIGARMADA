@@ -2,6 +2,31 @@
 			<div id = "title">
 				<h1>DYNAMIC CREATORS</h1>
 			</div>
+			<div class="hover-menu">
+		 		 <div class="box overlay">
+				    <div class="row">
+					    <div class="col-md-6 offset-md-3 text-center">
+					    	<ul  class="navbar-nav">
+					    	   <li class="nav-item">
+			       				 <a class="nav-link" href="#">HOME</a>
+			     			   </li>
+			     			   <li class="nav-item">
+			       				 <a class="nav-link" href="pages/projects">PROJECTS</a>
+			     			   </li>
+			     			   <li class="nav-item">
+			       				 <a class="nav-link" href="pages/merchandise">MERCHANDISE</a>
+			     			   </li>
+			     			   <li class="nav-item">
+			       				 <a class="nav-link" href="pages/services">SERVICES</a>
+			     			   </li>
+			     			   <li class="nav-item">
+			       				 <a class="nav-link" href="pages/about">ABOUT</a>
+			     			   </li>
+							</ul>
+					   </div>
+					</div>
+				</div>
+			</div>
 
 			<!-- Footer -->
 			<footer class="page-footer">

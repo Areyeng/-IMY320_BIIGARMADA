@@ -1,20 +1,21 @@
 
 /*------------------------------------------------------------Home Page Nav Link Hover Styling-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.container {
+.hover-menu {
   overflow-x: hidden; /*or overflow-x:scroll */
- 
+  display: none;
 }
-.col-md-6{
+.hover-menu .col-md-6{
 	margin-top: 5em;
 }
-h1{
+
+.hover-menu h1{
   color: black;
   font-size: 3em;
   font-weight: bold; 
  
 }
 
-a{
+.hover-menu a{
 	color: white;
 	font-size: 3em;
 	font-weight: bold; 
@@ -22,7 +23,7 @@ a{
 }
 
 /*---------------------------------------------------------Nav Link Blur On Hover-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-a:hover{
+.hover-menu a:hover{
   color: white;
   font-size: 5em; 
   font-weight: bold; 
@@ -49,7 +50,7 @@ a:hover{
   
 }
 
-.overlay {
+.hover-menu .overlay {
 
   z-index: 9;
   opacity: 0.7;
