@@ -1,7 +1,12 @@
-const scrollContainer = document.getElementById("container");
+$(document).ready(function() {
 
-scrollContainer.addEventListener("wheel", (evt) => {
-    evt.preventDefault();
-    scrollContainer.scrollLeft += evt.deltaY;
+$(".nav-link").hover(function() {
+    $('.nav-link').not(this).addClass('blur');
+  
+},
+function() {
+     $('.nav-link').not(this).removeClass('blur');
+    
+	});
 });
-
+/*BLURRY EFFECT ON OVERLAY NOT IMPLEMENT YET*/
