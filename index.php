@@ -2,6 +2,24 @@
 			<div id = "title">
 				<h1>DYNAMIC CREATORS</h1>
 			</div>
+
+			<div id="sections">
+			    <div class="section">
+				    <h1>LANDING</h1>
+			    </div>
+				<div class="section">
+				    <h1>WEBSITES</h1>
+			    </div>
+				<div  class="section">
+				    <h1>FILMS</h1>
+			    </div>
+			    <div  class="section">
+				    <h1>INFOGRAPHICS</h1>
+			    </div>
+			    <div  class="section">
+				    <h1>GAMES</h1>
+			    </div>
+			</div>
 			<div class="hover-menu">
 		 		 <div class="box overlay">
 				    <div class="row">
@@ -29,20 +47,26 @@
 			</div>
 
 			<!-- Footer -->
-			<footer class="page-footer">
-				<div class="social">
-			        <a href = "#" target = "_blank">
-			        	F
-			        </a>
-			                
-			        <a href = "#" target = "_blank">
-			        	T
-			        </a>
+			<footer class="page-footer font-small">
 
-			        <a href = "#" target = "_blank">
-			        	W
-			        </a>
-			    </div>
+				<!-- Footer Links -->
+
+				<!-- Footer Links -->
+
+				<!-- Copyright -->
+				<!-- <div class="footer-copyright text-left py-3">
+				    © 2021 Copyright:
+				    <a href="#"> #</a>
+				</div> -->
+				<!-- Copyright -->
+				<!-- footer -->
+				<div class="footer" >
+				        <div class="social-links" style="position:relative; left: 590px;top:-35px; font-size:160%;">
+				            <a href="#"><i class="fab fa-facebook-f" style="color: black; margin: 7px"></i></a>
+				            <a href="#"><i class="fab fa-twitter" style="color: black; margin: 7px"></i></a>
+				            <a href="#"><i class="fab fa-whatsapp" style="color: black; margin: 7px"></i></a>
+				        </div>
+				    </div>
 			</footer>
 
 		</div>

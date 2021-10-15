@@ -58,3 +58,44 @@
 }
 
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  height: 0; /*????????????????????????????*/
+  color: white;
+  text-align: center;
+}
+
+#sections {
+  overflow-x: hidden; /*or overflow-x:scroll */
+  display: flex;
+}
+
+#sections h1 {
+  margin: 0;
+}
+
+.section {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4ch;
+}
+.section:nth-child(even) {
+  background-color: #FF4433;
+  color: white;
+}
+
+#title{
+  margin-top: 30px;
+  position: fixed;
+}
+
+header.row, .page-footer{
+  position: fixed;
+}
