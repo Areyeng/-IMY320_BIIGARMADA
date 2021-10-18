@@ -1,3 +1,15 @@
+<style>
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: white;
+  text-align: center;
+}
+</style>
+
 <!-- //** FallBack Methods  **// -->
 
 
@@ -9,12 +21,19 @@
 <!-- Footer Links -->
 
 <!-- Copyright -->
-<div class="footer-copyright text-left py-3">
+<!-- <div class="footer-copyright text-left py-3">
     © 2021 Copyright:
     <a href="#"> #</a>
-</div>
+</div> -->
 <!-- Copyright -->
-
+<!-- footer -->
+<div class="footer" >
+        <div class="social-links" style="position:relative; left: 590px;top:-35px; font-size:160%;">
+            <a href="#"><i class="fab fa-facebook-f" style="color: black; margin: 7px"></i></a>
+            <a href="#"><i class="fab fa-twitter" style="color: black; margin: 7px"></i></a>
+            <a href="#"><i class="fab fa-whatsapp" style="color: black; margin: 7px"></i></a>
+        </div>
+    </div>
 </footer>
 </div>
 <!-- Footer -->
