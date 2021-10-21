@@ -1,12 +1,11 @@
-$(document).ready(function() {
-
-$(".nav-link").hover(function() {
-    $('.nav-link').not(this).addClass('blur');
-  
-},
-function() {
-     $('.nav-link').not(this).removeClass('blur');
-    
-	});
+const hBtn = document.querySelector('.h-btn');
+let hOpen = false;
+hBtn.addEventListener('click', () => {
+  if(!hOpen) {
+    hBtn.classList.add('open');
+    hOpen = true;
+  } else {
+    hBtn.classList.remove('open');
+    hOpen = false;
+  }
 });
-/*BLURRY EFFECT ON OVERLAY NOT IMPLEMENT YET*/

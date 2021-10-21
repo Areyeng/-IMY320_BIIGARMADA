@@ -1,59 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-/*------------------------------------------------------------Home Page Nav Link Hover Styling-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.container {
-  overflow-x: hidden; /*or overflow-x:scroll */
- 
-}
-.col-md-6{
-	margin-top: 5em;
-}
-h1{
-  color: black;
-  font-size: 3em;
-  font-weight: bold; 
- 
-}
+  body {
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
 
-a{
-	color: white;
-	font-size: 3em;
-	font-weight: bold; 
-	text-decoration: none;
-}
-
-/*---------------------------------------------------------Nav Link Blur On Hover-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-a:hover{
-  color: white;
-  font-size: 5em; 
-  font-weight: bold; 
-  text-decoration: none;
+  .h-btn {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+  }
   
+  .h-btn__burger {
+    width: 25px;
+    height: 5px;
+	  transform: translateX(-50%);
+    background: rgb(0, 0, 0);
+    border-radius: 1px;
+    transition: all .5s ease-in-out;
+  }
 
-}
-.blur{
-  z-index: 9;
-	filter: blur(5px);
-  color:white;
-  transition: 0.3s all;
-} 
-/*--------------------------------------------------------------------------------------------------------------Opaque Nav Background-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.box {/*To be replaced with actual content*/
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: white;
-  overflow-x: hidden;
-  /*filter: blur(5px);--makes all links blurry too*/
+  .h-btn__burger::before,
+  .h-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background: rgb(0, 0, 0);
+    border-radius: 1px;
+    transition: all .5s ease-in-out;
+  }
+  .h-btn__burger::before {
+    transform: translateY(-16px);
+  }
+  .h-btn__burger::after {
+    transform: translateY(16px);
+  }
   
-}
-
-.overlay {
-
-  z-index: 9;
-  opacity: 0.7;
-  background: black;
-}
-
-
+  .h-btn.open .h-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+  .h-btn.open .h-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .h-btn.open .h-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
