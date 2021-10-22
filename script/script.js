@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	navBlur();
+	hamburger();
 	scrollPage();
 	scrollItems();
 });
@@ -12,6 +13,17 @@ let navBlur = ()=>{
 	function() {
      $('.nav-link').not(this).removeClass('blur');
     
+	});
+}
+let hamburger = ()=>{
+	$("#hamburger").on("click",()=>{
+		document.getElementById("hamburger").classList.toggle("change");
+		$(".hover-menu").toggle();
+		$(".container-fluid > div:not(.hover-menu), footer, .footer").toggleClass("blurEffect");
+		/*if($(".hover-menu").css("opacity")==0)
+			$(".hover-menu").animate({opacity:1});
+		else if($(".hover-menu").css("opacity")==1)
+			$(".hover-menu").animate({opacity:0});*/
 	});
 }
 /*Allows the user to scroll from left to right in the homepage*/

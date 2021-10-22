@@ -26,7 +26,6 @@
 
         <!-- Local CSS -->
         <link rel="stylesheet" type="text/css" href="css/style.css" >
-        <link rel="stylesheet" href="css/jq-blureffect.css">
 
         <!-- Favicon -->
         <link rel="icon" type="image/png" size="16x16" href="img/logo_square.png"/>
@@ -35,15 +34,16 @@
 	<body>
 		<!-- <div class = "loading"></div> -->
 		<div class = "container-fluid">
-			<header class = "row fixed">
-				<a href = "/" class = "col-4 col-sm-4 col-md-3 col-lg-2">
+			<header>
+				<a href = "/">
 					<img class = "logo-img" src = "img/logo.png" alt = "logo"/>
 				</a>
 				<?php // require('navbar.php'); ?>
-                <span class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+				<!-- <span class="head-space"></span> -->
+                <span id="hamburger">
+                    <span id="bar1" class="bar"></span>
+                    <span id="bar2" class="bar"></span>
+                    <span id="bar3" class="bar"></span>
                 </span>
 			</header>
 
@@ -80,7 +80,7 @@
 			<div class="hover-menu">
 		 		 <div class="box overlay">
 				    <div class="row">
-					    <div class="col-md-6 offset-md-3 text-center">
+					    <div class="">
 					    	<ul  class="navbar-nav">
 					    	   <li class="nav-item">
 			       				 <a class="nav-link" href="#">HOME</a>
@@ -172,11 +172,5 @@
 		   data-close-text="Got it!">
 		</script> -->
 		<script src="script/script.js" type = "module"></script>
-		<!-- Blur effect js -->
-		<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-		        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
-		        crossorigin="anonymous">
-		</script> -->
-		<script src="script/jq-blureffect.js"></script>
 	</body>
 </html>
