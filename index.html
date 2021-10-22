@@ -1,18 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>CSS Hamburger Animation</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="h-btn">
-    <div class="h-btn__burger">
-     <div class="h-btn_burger_line"></div>
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		
+		<title>Hamburger Menu Animation</title>
+	</head>
+	<body>
+		<div id="menu-bar">
+			<div id="menu" onclick="onClickMenu()">
+				<div id="bar1" class="bar"></div>
+				<div id="bar2" class="bar"></div>
+				<div id="bar3" class="bar"></div>
+			</div>
+			<ul class="nav" id="nav">
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">PROJECTS</a></li>
+				<li><a href="#">MERCHANDISE</a></li>
+				<li><a href="#">SERVICES</a></li>
+				<li><a href="#">ABOUT</a></li>
+			</ul>
+		</div>
+		<div class="menu-bg" id="menu-bg"></div>
+		<script src="script.js"></script>
+	</body>
 </html>
