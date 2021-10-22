@@ -1,4 +1,6 @@
-
+.container-fluid{
+  padding: 0;
+}
 /*------------------------------------------------------------Home Page Nav Link Hover Styling-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .hover-menu {
   overflow-x: hidden; /*or overflow-x:scroll */
@@ -57,18 +59,27 @@
   background: black;
 }
 
-
+/*---------------------------------------------------------Footer-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: white;
-  height: 0; /*????????????????????????????*/
+  background-color: transparent;
   color: white;
-  text-align: center;
+  text-align: right;
+  height: 100px;
+  padding: 0 40px 40px 0;
+  z-index: 2;
 }
 
+.footer .social-links{
+  height: 100%;
+  padding: 10px;
+}
+
+
+/*---------------------------------------------------------Side Scrolling Layout-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 #sections {
   overflow-x: hidden; /*or overflow-x:scroll */
   display: flex;
@@ -91,11 +102,76 @@
   color: white;
 }
 
+/*---------------------------------------------------------Homepage Layout-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 #title{
   margin-top: 30px;
   position: fixed;
 }
 
-header.row, .page-footer{
+header{
   position: fixed;
+  height: 100px;
+  width: 100vw;
+  background-color: transparent;
+  padding: 30px 40px 20px 40px;
+  z-index: 2;
+}
+
+header a, header img, header span{
+  height: 100%;
+}
+
+#title{
+  transform: rotate(-90deg);
+  background-color: transparent;
+  position: fixed;
+  bottom: 45vh;
+  left: -40vh;
+  width: 100vh;
+  text-align: center;
+}
+
+#title h1{
+  padding: 20px 40px;
+  font-weight: bold;
+}
+
+/*---------------------------------------------------------Homepage Illustrations-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#ill{
+  height: 57vh;
+  width: 45vh;
+  position: fixed;
+}
+
+#ill span{
+  height: 18vh;
+  width: 18vh;
+  margin: 3vh 0 0 3vh;
+  display: inline-block;
+  position: absolute;
+}
+
+#ill span:nth-child(1){
+  background-color: #A50104;
+  margin-top: 14vh;
+}
+
+#ill span:nth-child(2){
+  background-color: #124E78;
+  right: 0;
+  margin: 3vh 3vh 0 0;
+}
+
+#ill span:nth-child(3){
+  background-color: #1D1E2C;
+  bottom: 0;
+  margin: 0 0 3vh 3vh;
+}
+
+#ill span:nth-child(4){
+  background-color: #F02D3A;
+  bottom: 0;
+  right: 0;
+  margin: 0 3vh 14vh 0;
+
 }
