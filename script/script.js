@@ -49,6 +49,20 @@ let scrollItems = ()=>{
 	let secondSec = $("#sections div.section:nth-child(2)").offset().left;
 	let lastSec = $("#sections div.section:last-child").offset().left;
 
+	// Varibales holding the initial values of each h1 element
+	let h1Move = [];
+	let h1Left = [];
+	let secPositions = [];
+
+	for (let i = 2; i < 6; i++){
+		let temp = $("#sections .section:nth-child("+i+") h1").css("margin-left").replace("px");
+		h1Left.push(parseFloat(temp));
+		secPositions.push($("#sections .section:nth-child("+i+")").offset().left);
+		h1Move.push(parseFloat(temp));
+		// console.log($("#sections .section:nth-child("+i+") h1").css("margin-left"));
+	}
+
+
 	scrollContainer.addEventListener("wheel", (evt) => {
 	    evt.preventDefault();
 		let tempScroll = scrollContainer.scrollLeft;
@@ -80,6 +94,27 @@ let scrollItems = ()=>{
 		    	marg[2] -= (evt.deltaY/4)*1.5;
 		    if(!halt[3])
 		   		marg[3] -= (evt.deltaY/4)*3.5;
+
+		   	if(secondSec>$("#sections .section:nth-child(2)").offset().left)
+		    	h1Move[0] -= evt.deltaY/4;
+
+		   	if(secondSec>$("#sections .section:nth-child(3)").offset().left)
+		    	h1Move[1] -= evt.deltaY/4;
+
+		   	if(secondSec>$("#sections .section:nth-child(4)").offset().left)
+		    	h1Move[2] -= evt.deltaY/4;
+
+		   	if(secondSec>$("#sections .section:nth-child(5)").offset().left)
+		    	h1Move[3] -= evt.deltaY/4;
+
+		   	if(secondSec-1>$("#sections .section:nth-child(2)").offset().left&&$("#title h1 span").css("opacity")==0){
+		   		$("#title h1").animate({fontSize:"380%"}).addClass("h1blur");
+		   		$("#title h1 span").animate({opacity:"1",fontSize:"50%",top:"90px"});
+		   	}
+		   	else if(secondSec-1<$("#sections .section:nth-child(2)").offset().left){
+		   		$("#title h1").animate({fontSize:"280%"}).removeClass("h1blur");
+		   		$("#title h1 span").animate({opacity:"0",fontSize:"70%",top:"50px"});
+		   	}
 		}
 		else if(firstSec<$("#sections div.section:last-child").offset().left){
 			if(marg[3]<iniLeft[3]-(evt.deltaY)*3.5){
@@ -124,7 +159,7 @@ let scrollItems = ()=>{
 		        	marg[i] = $(this).css("left");
 		        	marg[i].replace("px");
 		        	marg[i] = parseFloat(marg[i]);
-			        console.log("wrap");
+			        // console.log("wrap");
 			        wrap[i] = true;
 			        around[i] = true;
 			        halt[i] = true;
@@ -134,12 +169,23 @@ let scrollItems = ()=>{
 		        	marg[i] = $(this).css("left");
 		        	marg[i].replace("px");
 		        	marg[i] = parseFloat(marg[i]);
-			        console.log("wrap[i]");
+			        // console.log("wrap[i]");
 			        wrap[i] = false;
 			        around[i] = false;
 			        // halt[i] = true;
 			    }
 			});
+		}
+		// Paralax scrolling on the headings
+
+		for(let i = 0; i < 4; i++){
+		    let j=i+2;
+		    if(secondSec>$("#sections .section:nth-child(2)").offset().left){
+		    	$("#sections .section:nth-child("+j+") h1").css("margin-left",h1Move[i]+"px");		    	// h1Move[i]=secPositions[i];
+		    }
+		    /*else{
+		    	$("#sections .section:nth-child("+j+") h1").css("left",marg[i]+"px");
+		    }*/
 		}
 	});
 }

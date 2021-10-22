@@ -26,6 +26,7 @@
 
         <!-- Local CSS -->
         <link rel="stylesheet" type="text/css" href="css/style.css" >
+        <link rel="stylesheet" href="css/jq-blureffect.css">
 
         <!-- Favicon -->
         <link rel="icon" type="image/png" size="16x16" href="img/logo_square.png"/>
@@ -47,7 +48,7 @@
 			</header>
 
 			<div id = "title">
-				<h1>DYNAMIC CREATORS</h1>
+				<h1>DYNAMIC CREATORS<span>DYNAMIC CREATORS</span></h1>
 			</div>
 
 			<div id="sections">
@@ -61,15 +62,19 @@
 			    </div>
 				<div class="section">
 				    <h1>WEBSITES</h1>
+				    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tortor quis diam tincidunt pharetra. Nulla at neque sit amet turpis fringilla dapibus. Mauris id condimentum sapien. Maecenas placerat et augue id pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada risus tortor. Cras euismod mi ornare tincidunt semper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc commodo turpis cursus, varius ante vel, venenatis felis.</p>
 			    </div>
 				<div  class="section">
 				    <h1>FILMS</h1>
+				    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tortor quis diam tincidunt pharetra. Nulla at neque sit amet turpis fringilla dapibus. Mauris id condimentum sapien. Maecenas placerat et augue id pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada risus tortor. Cras euismod mi ornare tincidunt semper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc commodo turpis cursus, varius ante vel, venenatis felis.</p>
 			    </div>
 			    <div  class="section">
 				    <h1>INFOGRAPHICS</h1>
+				    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tortor quis diam tincidunt pharetra. Nulla at neque sit amet turpis fringilla dapibus. Mauris id condimentum sapien. Maecenas placerat et augue id pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada risus tortor. Cras euismod mi ornare tincidunt semper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc commodo turpis cursus, varius ante vel, venenatis felis.</p>
 			    </div>
 			    <div  class="section">
 				    <h1>GAMES</h1>
+				    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tortor quis diam tincidunt pharetra. Nulla at neque sit amet turpis fringilla dapibus. Mauris id condimentum sapien. Maecenas placerat et augue id pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada risus tortor. Cras euismod mi ornare tincidunt semper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc commodo turpis cursus, varius ante vel, venenatis felis.</p>
 			    </div>
 			</div>
 			<div class="hover-menu">
@@ -167,5 +172,11 @@
 		   data-close-text="Got it!">
 		</script> -->
 		<script src="script/script.js" type = "module"></script>
+		<!-- Blur effect js -->
+		<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+		        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+		        crossorigin="anonymous">
+		</script> -->
+		<script src="script/jq-blureffect.js"></script>
 	</body>
 </html>
