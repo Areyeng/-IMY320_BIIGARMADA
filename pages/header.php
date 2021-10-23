@@ -35,8 +35,8 @@
 		<!-- <div class = "loading"></div> -->
 		<div class = "container-fluid">
 			<header class = "row fixed">
-				<a href = "/" class = "col-4 col-sm-4 col-md-3 col-lg-2">
-					<img class = "img-fluid logo-img" src = "img/logo2.png" alt = "logo"/>
+				<a href = "../" class = "col-4 col-sm-4 col-md-3 col-lg-2">
+					<img class = "img-fluid logo-img" src = "../img/logo.png" alt = "logo"/>
 				</a>
 				<?php // require('navbar.php'); ?>
                 <span class="hamburger">

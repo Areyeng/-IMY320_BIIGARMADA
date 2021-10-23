@@ -1,8 +1,18 @@
+.container-fluid{
+  padding: 0;
+}
+body{
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 /*------------------------------------------------------------Home Page Nav Link Hover Styling-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .hover-menu {
   overflow-x: hidden; /*or overflow-x:scroll */
   display: none;
+  text-align: center;
+  /*opacity: 0;*/
+  transition: all 0.5s ease-in-out;
 }
 .hover-menu .col-md-6{
 	margin-top: 5em;
@@ -22,6 +32,10 @@
 	text-decoration: none;
 }
 
+.hover-menu ul{
+  margin-top: 17%;
+}
+
 /*---------------------------------------------------------Nav Link Blur On Hover-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .hover-menu a:hover{
   color: white;
@@ -32,7 +46,7 @@
 
 }
 .blur{
-  z-index: 9;
+  z-index: 7;
 	filter: blur(5px);
   color:white;
   transition: 0.3s all;
@@ -50,25 +64,49 @@
   
 }
 
+.hover-menu{
+  z-index: 6;
+}
+
 .hover-menu .overlay {
 
-  z-index: 9;
+  z-index: 7;
   opacity: 0.7;
   background: black;
 }
 
+.hover-menu a{
+  opacity: 1;
+}
 
+.container-fluid > div.blurEffect:not(.hover-menu), footer.blurEffect, .footer.blurEffect{
+  filter: blur(4px);
+}
+.container-fluid > div:not(.hover-menu), footer, .footer{
+  transition: all 0.5s ease-in-out;
+}
+
+/*---------------------------------------------------------Footer-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: white;
-  height: 0; /*????????????????????????????*/
+  background-color: transparent;
   color: white;
-  text-align: center;
+  text-align: right;
+  height: 100px;
+  padding: 0 40px 40px 0;
+  z-index: 2;
 }
 
+.footer .social-links{
+  height: 100%;
+  padding: 10px;
+}
+
+
+/*---------------------------------------------------------Side Scrolling Layout-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 #sections {
   overflow-x: hidden; /*or overflow-x:scroll */
   display: flex;
@@ -76,6 +114,7 @@
 
 #sections h1 {
   margin: 0;
+  /*font-size: 4ch;*/
 }
 
 .section {
@@ -84,18 +123,218 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4ch;
 }
 .section:nth-child(even) {
-  background-color: #FF4433;
+  /*background-color: #FF4433;*/
   color: white;
 }
+/*------------------------------------------------------------Hamburger menu-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#hamburger{
+  width: auto;
+  /*margin: 30px 0 20px 20px;*/
+  cursor: pointer;
+  position: absolute;
+  right: 40px;
+  /*top: 0;*/
+  /*margin: 30px 40px 0px 0px;*/
+  padding-top: 20px;
+  z-index: 9;
+}
+.bar{
+  
+  width: 35px;
+  height: 5px;
+  transform: translateX(30%);
+  background-color: #000000;
+  display: flex;
+  border-radius: 1px;
+  transition: all 0.5s ease-in-out;
+}
+#bar1{
+  transform: translateY(-8px);
+}
+#bar2{
+  width: 20px;
+  /*left: 25;*/
+  align-items: center;
+}
+#bar3{
+  transform: translateY(8px);
+}
 
+.change-bg{
+  width: 550px;
+  height: 540px;
+  border-left: 25;
+}
+.change .bar{
+  background-color: black;
+  right: 10;
+}
+.change #bar1, #bar3{
+  content: '';
+  transition: all 0.5s ease-in-out;
+}
+.change #bar1{
+  transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3{
+  transform: translateY(-6px) rotate(45deg);
+}
+.change #bar2{
+  opacity: 0;
+}
+.change{
+  /*display: block;*/
+  align-items: center;
+}
+/*---------------------------------------------------------Homepage Layout-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 #title{
   margin-top: 30px;
   position: fixed;
 }
 
-header.row, .page-footer{
+header{
   position: fixed;
+  height: 100px;
+  width: 100vw;
+  background-color: transparent;
+  padding: 30px 40px 20px 40px;
+  z-index: 8;
 }
+
+header a, header img{
+  height: 100%;
+}
+
+#title{
+  transform: rotate(-90deg);
+  background-color: transparent;
+  position: fixed;
+  bottom: 45vh;
+  left: -40vh;
+  width: 100vh;
+  text-align: center;
+  z-index: 3;
+}
+
+#title h1{
+  padding: 20px 40px;
+  font-weight: bold;
+  /* text-shadow: 100px 100px 1000px #000, 20px 100px 20px rgba(0,0,0,0.6);
+  filter: blur(3px);
+  font-size: 450%; */
+  font-size: 280%;
+  position: relative;
+}
+
+#title h1.h1blur{
+  filter: blur(3px);
+}
+
+#title h1 span{
+  position: absolute;
+  font-size: 70%;
+  filter: blur(4px);
+  top: 50px;
+  left: 0;
+  width: 100%;
+  /*display: none;*/
+  opacity: 0;
+}
+/*---------------------------------------------------------Homepage Text-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.section p{
+  position: absolute;
+  width: 35%;
+  margin: 15%;
+  font-size: 150%;
+  color: #1D1E2C;
+}
+
+.section:not(:first-child){
+  position: relative;
+  z-index: 0;
+}
+
+.section:nth-child(odd):not(:first-child) p{
+  text-align: left;
+  left: 0;
+}
+
+.section:nth-child(even):not(:first-child) p{
+  text-align: right;
+  right: 0;
+}
+
+.section:nth-child(3) p{
+  text-align: center !important;
+  margin-left: 20%;
+}
+
+#sections h1{
+  color: rgb(220,220,220);
+  font-size: 22vh;
+}
+
+#sections .section:nth-child(2) h1{
+  margin-bottom: -35%;
+  margin-left: 500px;
+}
+
+#sections .section:nth-child(3) h1{
+  margin-top: -35%;
+  margin-left: 500px;
+}
+
+#sections .section:nth-child(4) h1{
+  margin-bottom: -35%;
+  margin-left: 500px;
+}
+
+#sections .section:nth-child(5) h1{
+  margin-top: -35%;
+  margin-left: 500px;
+}
+
+/*---------------------------------------------------------Homepage Illustrations-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#ill{
+  height: 57vh;
+  width: 45vh;
+  position: fixed;
+  z-index: 1;
+}
+
+#ill span{
+  height: 18vh;
+  width: 18vh;
+  margin: 3vh 0 0 3vh;
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+}
+
+#ill span:nth-child(1){
+  background-color: #A50104;
+  margin-top: 14vh;
+}
+
+#ill span:nth-child(2){
+  background-color: #124E78;
+  right: 0;
+  margin: 3vh 3vh 0 0;
+}
+
+#ill span:nth-child(3){
+  background-color: #1D1E2C;
+  bottom: 0;
+  margin: 0 0 3vh 3vh;
+}
+
+#ill span:nth-child(4){
+  background-color: #F02D3A;
+  bottom: 0;
+  right: 0;
+  margin: 0 3vh 14vh 0;
+}
+
