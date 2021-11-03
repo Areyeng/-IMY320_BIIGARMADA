@@ -2,11 +2,19 @@ body{
 	background-color: white;
 	font-family: Arial, Helvetica, sans-serif;
 }
+
+.menu-bar{
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
 #menu{
 	width: 35px;
 	height: 30px;
-	margin: 30px 0 20px 20px;
+	margin: 30px 20px 20px 20px;
 	cursor: pointer;
+	float: right;
 	
 }
 .bar{
@@ -24,31 +32,45 @@ body{
 }
 #bar2{
   width: 20px;
-  left: 25;
+  left: 0;
   align-items: center;
 }
 #bar3{
 	transform: translateY(8px);
 }
 .nav li a{
-	transform: translateX(30%);
+	transform: translateX(50%);
 	color: rgb(5, 5, 5);
-	font-size: 5em;
+	font-size: 4em;
 	font-weight: bold;
 	text-decoration: none;
 }
-.nav li a:hover{
-	color: white;
-	font-size: 5em;
-	font-weight: bold;
-	text-decoration: none;
-}
-.nav li a:hover .blur{
+.nav li a{
 	z-index:  9;
 	filter: blur(5px);
+
+	/*Color inactive navigation link*/
 	color: white;
 	transition: all 0.5s ease-in-out;
 }
+
+.nav li a.active{
+	filter: blur(0px);
+	font-size: 5em;
+	/*color of active navigation link */
+	color: white;
+}
+
+#nav.nav li a:hover{
+	/*color of navigation link on hover*/
+	/*you can change this to a different shade of the active color to have a slight hover effect */
+	color: rgb(255, 255, 255);
+	filter: blur(0px);
+	font-size: 5em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
 .nav li{
 	list-style: none;
 	padding: 16px 0;
@@ -65,17 +87,17 @@ body{
 	position: absolute;
 }
 .menu-bg{
-	z-index: 1;
-	width: 0;
-	height: 0;
-	margin: 30px 0 20px 20px;
-	border-radius: 50%;
+	z-index: -1;
+	width: 100vw;
+	height: 100vh;
+	display: none;
 	transition: all 0.5s ease-in-out;
 }
 #menu-bar{
 	z-index: 3;
-	position: absolute;
 	top: 0;
+	left: 0;
+	position: absolute;
 	background: white;
 	overflow-x: hidden;
 }
@@ -85,9 +107,11 @@ body{
 	background: black;
 }
 .change-bg{
-	width: 550px;
-	height: 540px;
-	border-left: 25;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0,0,0,0.4);
+	left: 0;
+	display: block;
 }
 .change .bar{
 	background-color: black;
@@ -110,3 +134,20 @@ body{
 	display: block;
 	align-items: center;
 }
+
+.nav.change{
+	margin-left: auto;
+	margin-right: auto;
+	height: 100vh;
+	justify-content: center;
+	display: grid;
+	text-align: center;
+}
+
+
+#menu-bar.change{
+	width: 100vw;
+	height: 100vh;
+	display: flow-root;
+}
+
