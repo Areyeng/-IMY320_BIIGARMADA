@@ -25,7 +25,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
 
         <!-- Local CSS -->
-        <link rel="stylesheet" type="text/css" href="css/style.css" >
+        <link rel="stylesheet" type="text/css" href="../css/style.css" >
 
         <!-- Favicon -->
         <link rel="icon" type="image/png" size="16x16" href="../img/logo_square.png"/>
@@ -34,14 +34,40 @@
 	<body>
 		<!-- <div class = "loading"></div> -->
 		<div class = "container-fluid">
-			<header class = "row fixed">
-				<a href = "../" class = "col-4 col-sm-4 col-md-3 col-lg-2">
-					<img class = "img-fluid logo-img" src = "../img/logo.png" alt = "logo"/>
-				</a>
+			<header>
+                <a href = "../">
+                    <img class = "logo-img" src = "../img/logo.png" alt = "logo"/>
+                </a>
 				<?php // require('navbar.php'); ?>
-                <span class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <span id="hamburger">
+                    <span id="bar1" class="bar"></span>
+                    <span id="bar2" class="bar"></span>
+                    <span id="bar3" class="bar"></span>
                 </span>
 			</header>
+            
+            <div class="hover-menu">
+                 <div class="box overlay">
+                    <div class="row">
+                        <div class="">
+                            <ul  class="navbar-nav">
+                               <li class="nav-item">
+                                 <a class="nav-link" href="#">HOME</a>
+                               </li>
+                               <li class="nav-item">
+                                 <a class="nav-link" href="pages/projects">PROJECTS</a>
+                               </li>
+                               <li class="nav-item">
+                                 <a class="nav-link" href="pages/merchandise">MERCHANDISE</a>
+                               </li>
+                               <li class="nav-item">
+                                 <a class="nav-link" href="pages/services">SERVICES</a>
+                               </li>
+                               <li class="nav-item">
+                                 <a class="nav-link" href="pages/about">ABOUT</a>
+                               </li>
+                            </ul>
+                       </div>
+                    </div>
+                </div>
+            </div>

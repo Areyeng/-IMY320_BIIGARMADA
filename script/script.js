@@ -1,8 +1,21 @@
 $(document).ready(function() {
-	navBlur();
-	hamburger();
-	scrollPage();
-	scrollItems();
+	let str = window.location.pathname;
+	if(str.indexOf("index")>0
+	||(str.indexOf("projects")<=0
+	&&str.indexOf("project")<=0
+	&&str.indexOf("services")<=0
+	&&str.indexOf("about")<=0
+	&&str.indexOf("merchandise")<=0
+	&&str.indexOf("item")<=0
+	&&str.indexOf("cart")<=0)){
+		navBlur();
+		hamburger();
+		scrollPage();
+		scrollItems();
+	}
+	else{
+		projectPreview();
+	}
 });
 /*BLURRY EFFECT ON OVERLAY NOT IMPLEMENT YET*/
 let navBlur = ()=>{
@@ -20,10 +33,6 @@ let hamburger = ()=>{
 		document.getElementById("hamburger").classList.toggle("change");
 		$(".hover-menu").toggle();
 		$(".container-fluid > div:not(.hover-menu), footer, .footer").toggleClass("blurEffect");
-		/*if($(".hover-menu").css("opacity")==0)
-			$(".hover-menu").animate({opacity:1});
-		else if($(".hover-menu").css("opacity")==1)
-			$(".hover-menu").animate({opacity:0});*/
 	});
 }
 /*Allows the user to scroll from left to right in the homepage*/
@@ -161,7 +170,7 @@ let scrollItems = ()=>{
 		}
 
 		// Allow the element to disappear on the left hand side of the screen
-		// and appear on the left hand side
+		// and appear on the right hand side
 		for(let i = 0; i < 4; i++){
 			let j=i+1;
 			$.each($("#ill span:nth-child("+j+")"),function(){
@@ -198,6 +207,27 @@ let scrollItems = ()=>{
 		    /*else{
 		    	$("#sections .section:nth-child("+j+") h1").css("left",marg[i]+"px");
 		    }*/
+		}
+	});
+}
+
+let projectPreview = ()=>{
+	let projects = $('.project');
+	let distance = 0;
+    let $window = $(window);
+
+	$window.scroll(function() {
+		// console.log(projects);
+		for(let i=0; i<projects.length; i++){
+			// console.log(projects.length);
+
+		    let j = i+1;
+		    if ($window.scrollTop()+(window.innerHeight/8) > projects[i].offsetTop&& !$(".project:nth-child("+j+")").hasClass("in-view")) {
+		        $(".project:nth-child("+j+")").addClass("in-view");
+		    }
+		    else if($window.scrollTop()+(window.innerHeight/8) < projects[i].offsetTop&& $(".project:nth-child("+j+")").hasClass("in-view")){
+		    	$(".project:nth-child("+j+")").removeClass("in-view");
+		    }
 		}
 	});
 }

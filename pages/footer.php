@@ -34,12 +34,12 @@
 
 <script>
     // jQuery Fallback
-    window.jQuery || document.write('<script src="script/js_fallback/jquery-3.4.1.min.js"><\/script>');
+    window.jQuery || document.write('<script src="../script/js_fallback/jquery-3.4.1.min.js"><\/script>');
 </script>
 <script>
     // Bootstrap JS Local Fallback
     if(typeof($.fn.modal) === 'undefined')
-        document.write('<script src="script/js_fallback/bootstrap.min.js"><\/script>');
+        document.write('<script src="../script/js_fallback/bootstrap.min.js"><\/script>');
 </script>
 <script>
     // Bootstrap CSS Fallback
@@ -48,12 +48,12 @@
             $('head')
             .prepend(
                 $('<link/>')
-                .attr({'rel':'stylesheet', 'href':'css/css_fallback/bootstrap.min.css'})
+                .attr({'rel':'stylesheet', 'href':'../css/css_fallback/bootstrap.min.css'})
             );
         }
     });
 </script>
-<script id="cookieinfo"
+<!-- <script id="cookieinfo"
     src="//cookieinfoscript.com/js/cookieinfo.min.js"
     data-bg="#241E4E"
     data-fg="#FFFFFF"
@@ -61,8 +61,8 @@
     data-cookie="CookieInfoScript"
     data-text-align="left"
    data-close-text="Got it!">
-</script>
+</script> -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="script/script.js" type = "module"></script>
+<script src="../script/script.js" type = "module"></script>
 </body>
 </html>

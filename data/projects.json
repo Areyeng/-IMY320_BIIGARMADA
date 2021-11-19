@@ -1,27 +1,37 @@
 [
 	{
 		"name": "Rusted",
-		"type": "Game",
-		"description": ""
+		"type": "PC Game",
+		"preview": "Rusted is an action-adventure platformer game created by a member of BIIG Armada and his teammates.",
+		"description": "Rusted is an action-adventure platformer game created by a member of BIIG Armada and his teammates. It immerses the player in a story of a robot that was deemed defective by society. He then goes after the ones that sentenced him to his demise once he has repaired himself.",
+		"cover": "../img/innA.jpg"
 	},
 	{
 		"name": "Amenitinn",
 		"type": "Website",
-		"description": ""
+		"preview": "An online marketplace for homestays and lodging for vacations. Find your ideal vacation location or make yours available.",
+		"description": "Rusted is an action-adventure platformer game created by a member of BIIG Armada and his teammates. It immerses the player in a story of a robot that was deemed defective by society. He then goes after the ones that sentenced him to his demise once he has repaired himself.",
+		"cover": "../img/innA.jpg"
 	},
 	{
 		"name": "The IVth Wall",
 		"type": "Website",
-		"description": ""
+		"preview": "The IVth Wall is a movie and tv database. It displays data of movies and tv series, using APIs to update records displayed.",
+		"description": "Rusted is an action-adventure platformer game created by a member of BIIG Armada and his teammates. It immerses the player in a story of a robot that was deemed defective by society. He then goes after the ones that sentenced him to his demise once he has repaired himself.",
+		"cover": "../img/innA.jpg"
 	},
 	{
 		"name": "Blinded Getaway",
 		"type": "Short Film",
-		"description": ""
+		"preview": "A short horror film about three female friends that spend their weekend at a BnB, however their vacation away is not what it seems.",
+		"description": "Rusted is an action-adventure platformer game created by a member of BIIG Armada and his teammates. It immerses the player in a story of a robot that was deemed defective by society. He then goes after the ones that sentenced him to his demise once he has repaired himself.",
+		"cover": "../img/innA.jpg"
 	},
 	{
 		"name": "INFOGRAPHIC",
 		"type": "Infographic",
-		"description": ""
+		"preview": "",
+		"description": "Rusted is an action-adventure platformer game created by a member of BIIG Armada and his teammates. It immerses the player in a story of a robot that was deemed defective by society. He then goes after the ones that sentenced him to his demise once he has repaired himself.",
+		"cover": "../img/innA.jpg"
 	}
 ]

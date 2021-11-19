@@ -35,7 +35,7 @@
 		<!-- <div class = "loading"></div> -->
 		<div class = "container-fluid">
 			<header>
-				<a href = "/">
+				<a href = "#">
 					<img class = "logo-img" src = "img/logo.png" alt = "logo"/>
 				</a>
 				<?php // require('navbar.php'); ?>
