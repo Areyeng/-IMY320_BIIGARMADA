@@ -62,7 +62,7 @@
 			    </div>
 				<div class="section">
 				    <h1>WEBSITES</h1>
-				    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tortor quis diam tincidunt pharetra. Nulla at neque sit amet turpis fringilla dapibus. Mauris id condimentum sapien. Maecenas placerat et augue id pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada risus tortor. Cras euismod mi ornare tincidunt semper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc commodo turpis cursus, varius ante vel, venenatis felis.</p>
+				    <p>We create websites unique to your brand's identity. By using the latests trends, we make sure your website keeps up with the competition in terms of UI design and functionality. <br/><br/> If you wish to find out more about our web design skills, please make your way to the <a href="pages/projects">projects</a> page.</p>
 			    </div>
 				<div  class="section">
 				    <h1>FILMS</h1>
